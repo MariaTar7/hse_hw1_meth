@@ -1,4 +1,6 @@
 # hse_hw1_meth
+### Ссылка на колаб
+https://colab.research.google.com/drive/1PEeIDy3hm5tl3l2QtsxmULoJSB_BCMTw?usp=sharing
 
 ## Анализ QC прочтений
 ![Снимок экрана от 2022-02-21 21-09-28](https://user-images.githubusercontent.com/93282657/155007656-7d1113eb-7e99-4a71-b238-aed15f160fea.png) ![Снимок экрана от 2022-02-21 21-09-17](https://user-images.githubusercontent.com/93282657/155007665-a528711b-ea7a-4910-be61-be3d1be25c66.png)
