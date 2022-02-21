@@ -3,17 +3,26 @@
 https://colab.research.google.com/drive/1PEeIDy3hm5tl3l2QtsxmULoJSB_BCMTw?usp=sharing
 
 ## Анализ QC прочтений
+![Снимок экрана от 2022-02-21 23-37-55](https://user-images.githubusercontent.com/93282657/155023484-5681585f-ab44-49bf-bdaa-c39371513eab.png)
+
+
 ![Снимок экрана от 2022-02-21 21-09-28](https://user-images.githubusercontent.com/93282657/155007656-7d1113eb-7e99-4a71-b238-aed15f160fea.png) ![Снимок экрана от 2022-02-21 21-09-17](https://user-images.githubusercontent.com/93282657/155007665-a528711b-ea7a-4910-be61-be3d1be25c66.png)
 
 
 
 
 ## Таблица (пункты a и b)
+
 Образец | 11347700-11367700 | 40185800-40195800 | Deduplicated % |  
  --- |--- |--- |--- 
 Cell 8 | 1090 | 464 | 81.69 | 
 ICM | 1456 | 630 | 90.92 | 
 Epiblast | 2328 | 1062 | 97.08 | 
+
+### bash-скрипт для выполнения дедупликации для всех образцов одновременно
+
+    ls *pe.bam | xargs -P 4 -tI{} deduplicate_bismark  --bam  --paired  -o s_{} {}
+
 
 ## M-bias plot
 ICM | Epiblast | Cell 8 |
